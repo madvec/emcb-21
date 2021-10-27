@@ -1,0 +1,71 @@
+.block.gallery {
+  /* holder override */
+  .holder {
+    max-width: 1275px;
+  }
+  .nav-item[role="presentation"] {
+    width: 50%;
+    button {
+      color: #2d57fa;
+      font-size: 30px;
+      font-weight: 600;
+      font-family: $barlow;
+      text-align: center;
+      border-width: 2px;
+      border-color: #2d57fa;
+      border-style: solid;
+      border-radius: 0;
+      padding: 4px;
+      width: 100%;
+      &.active {
+        color: $white;
+        background-color: #2d57fa;
+      }
+    }
+  }
+  .container-1 div {
+    padding: 10px 5px 0;
+  }
+
+  .container-2 {
+    max-width: 330px;
+    padding-top: 10px;
+    padding-left: 5px;
+    width: 100%;
+  }
+
+  .container-2 div {
+    background-image: url("../images/gallery/gal-1-6.png");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+  }
+  #pills-host {
+    .d-flex div {
+      padding-top: 10px;
+    }
+    .d-flex div:nth-child(1) {
+      padding-right: 5px;
+    }
+    .d-flex div:nth-child(2) {
+        padding-left: 5px;
+      }
+  }
+}
+
+@media (max-width:767px) {
+  .block.gallery {
+    .content {
+      padding: 0;
+    }
+  }
+}
+
+@media (max-width:576px) {
+  .block.gallery {
+    .nav-item[role=presentation] button {
+      font-size: 12px;
+    }
+  }
+}

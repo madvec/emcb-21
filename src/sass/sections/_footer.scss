@@ -1,0 +1,43 @@
+footer {
+    background-color: #0D0952;
+    color: $white;
+    font-weight: 500;
+    font-size: 22px;
+    padding: 25px 0;
+    .logo {
+        max-width: 140px;
+    }
+    .social {
+        max-width: 230px;
+        width: 100%;
+    }
+    .copyright {
+        font-size: 12px;
+        font-weight: 400;
+    }
+}
+
+@media (max-width:767px) {
+    footer {
+        padding: 15px 0 30px;
+    }
+    .logo {
+        margin: 0 auto;
+    }
+    .social {
+        margin: 40px auto;
+    }
+    .copyright {
+        flex-direction: column;
+        text-align: center;
+        div {
+            width: 100%;
+        }
+        span {
+            display: block;
+            margin-top: 20px;
+        }
+    }
+
+
+}

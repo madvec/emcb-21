@@ -1,0 +1,33 @@
+/* Vertical position
+Ej. @include vertical-center(relative)
+*/
+@mixin vertical-center ($position) {
+    position: #{$position};
+    top: 50%;
+    transform: translateY(-50%);
+ }
+
+ /* Absolute position
+ Ej. @include abs-position(100px, 100px, auto, auto);
+ */
+ @mixin abs-position ($top, $right, $bottom, $left) {
+    position: absolute;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+ }
+
+ /* Build a button
+ Ej. @include button-bg(#2ecc71);
+ */
+ @mixin button-bg($bg) {
+    background: $bg;
+    &:hover {
+      background:darken($bg,8%);
+      transition: all 0.3s ease;
+    }
+    &:active {
+      background:darken($bg,25%);
+    }
+  }

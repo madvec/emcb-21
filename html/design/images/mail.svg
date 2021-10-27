@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="42px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Group 22</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-Copy" transform="translate(-693.000000, -11473.000000)">
+            <g id="Group-22" transform="translate(693.000000, 11473.000000)">
+                <circle id="Oval" fill="#ECEFF1" cx="21" cy="21" r="21"></circle>
+                <circle id="Oval" fill="#0CC6CD" cx="21" cy="21" r="18"></circle>
+                <g id="email" transform="translate(10.000000, 13.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                    <polygon id="Path" points="1 0 10.5 7 20 0"></polygon>
+                    <path d="M11.55,8.734375 C11.22,8.96875 10.67,8.96875 10.34,8.734375 L0,1 L0,14.828125 C0,15.4140625 0.55,16 1.1,16 L20.9,16 C21.45,16 22,15.4140625 22,14.828125 L22,1 L11.55,8.734375 Z" id="Path"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

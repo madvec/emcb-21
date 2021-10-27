@@ -1,0 +1,134 @@
+.block.contact {
+  padding-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+  .parallax-elem {
+    position: absolute;
+    width: 25px;
+    &.cir-4 {
+      left: 15%;
+      top: 15%;
+    }
+    &.cir-5 {
+      left: 25%;
+      bottom: 15%;
+    }
+    &.cir-6 {
+      right: 4%;
+      top: 25%;
+    }
+    &.cir-7 {
+      right: 25%;
+      bottom: 30%;
+    }
+  }
+  .title {
+    color: $primary;
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  .subtitle {
+    color: #6b6b6b;
+    text-align: center;
+    font-family: $barlow;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+  .contact-form {
+    max-width: 675px;
+    margin: 0 auto 50px;
+    position: relative;
+  }
+  input,
+  textarea {
+    background-color: $primary;
+    color: $white;
+    font-weight: 400;
+    font-size: 18px;
+    padding-left: 10px;
+    border: 1px solid;
+    resize: none;
+    width: 100%;
+    &::placeholder {
+      color: $white;
+    }
+  }
+  .input-container {
+    .invalid {
+      border-bottom: 2px solid #dc3545;
+    }
+    div {
+      width: 100%;
+      &:nth-child(1) {
+        padding-right: 10px;
+      }
+      &:nth-child(2) {
+        padding-left: 10px;
+      }
+    }
+  }
+  textarea {
+    height: 140px;
+    width: 100%;
+    margin-top: 20px;
+  }
+  input[type="submit"] {
+    @include button-bg(#2c3dfb);
+    color: #ffffff;
+    border-radius: 8px;
+    display: block;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: $barlow;
+    letter-spacing: 2.14px;
+    margin-left: auto;
+    margin-top: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 140px;
+  }
+  .contact-us {
+    a {
+      color: #545454;
+      font-size: 28px;
+      font-weight: 500;
+      display: block;
+      text-decoration: none;
+      margin-top: 20px;
+    }
+    div:nth-child(1) {
+      color: #6b6b6b;
+      font-size: 26px;
+      font-weight: 700;
+      font-family: $barlow;
+    }
+  }
+  .status-message {
+    border: 2px solid #1f40c3;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .message {
+      font-size: 24px;
+      font-weight: 500;
+    }
+    .spinner {
+      margin: 10px auto;
+      width: 64px;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .parallax-elem {
+    display: none;
+  }
+}

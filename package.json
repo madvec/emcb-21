@@ -1,0 +1,29 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preinstall": "npx npm-force-resolutions"
+  },
+  "author": "Madvec",
+  "license": "MIT",
+  "dependencies": {
+    "graceful-fs": "4.2.2",
+    "gulp": "gulpjs/gulp.git#4.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^5.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2"
+  },
+  "devDependencies": {
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-livereload": "^4.0.2",
+    "sass": "^1.39.2"
+  },
+  "resolutions": {
+    "graceful-fs": "^4.2.4"
+  }
+}
