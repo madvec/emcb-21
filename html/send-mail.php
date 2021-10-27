@@ -16,13 +16,13 @@ $mail = new PHPMailer(false);
 
 try {
     //Server settings
-    $mail->SMTPDebug   = SMTP::DEBUG_SERVER;                    //Enable verbose debug output
-    $mail->isSMTP();                                            //Send using SMTP
-    $mail->Host        = 'smtp.gmail.com';                   //Set the SMTP server to send through
-    $mail->SMTPAuth    = true;                                  //Enable SMTP authentication
+    $mail->SMTPDebug   = SMTP::DEBUG_SERVER;                 //Enable verbose debug output
+    $mail->isSMTP();                                         //Send using SMTP
+    $mail->Host        = '';                                 //Set the SMTP server to send through
+    $mail->SMTPAuth    = true;                               //Enable SMTP authentication
     $mail->SMTPAutoTLS = false;
-    $mail->Username    = '';                 //SMTP username
-    $mail->Password    = '';                          //SMTP password
+    $mail->Username    = '';                                //SMTP username
+    $mail->Password    = '';                                //SMTP password
     $mail->SMTPSecure  = PHPMailer::ENCRYPTION_STARTTLS;        //Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
     // $mail->SMTPSecure  = PHPMailer::ENCRYPTION_SMTPS;
     $mail->Port = '587';                                   //TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above (default: 587)
@@ -48,16 +48,18 @@ try {
 
     // Parse data to an associative array.
     $data = json_decode( urldecode($post), true);
+    $form_data = $data['data'];
 
     // Extract each data from form to create the mail message.
-    foreach ($data['data'] as $key => $value) {
+    //print_r($data);
+    foreach ($form_data as $key => $value) {
         if ($key === 'host') {
             continue;
         }
         $message .= "$key: $value<br />";
     }
     $mail->Body    = $message;
-    print_r($mail);
+    //print_r($mail);
     // $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
     echo $mail->send();
 } catch (Exception $e) {

@@ -76,7 +76,7 @@
 
                 // Initialize contact form.
                 this.form = new pl.ContactForm(contactForm, {
-                    url: 'php/contacto.php',
+                    url: './send-mail.php',
                     //url: './process-ajax.php',
                     inputSelectors: [
                         "input[type=text]",
